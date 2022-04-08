@@ -10,15 +10,6 @@ To write a program to implement the linear regression using gradient descent.
 ## Algorithm
 
 ## Program:
-```
-/*
-Program to implement the linear regression using gradient descent.
-Developed by:
-RegisterNumber:
-
-
-*/
-```
 
 ## Output:
 ![linear regression using gradient descent]()
