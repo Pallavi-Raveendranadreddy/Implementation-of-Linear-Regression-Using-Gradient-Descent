@@ -23,34 +23,42 @@ RegisterNumber:212221240059
 import numpy as np
 import pandas as pd
 import matplotlib.pyplot as plt
-
-dataset=pd.read_csv('scores.csv')
-dataset.head()
-X = dataset.iloc[:,:-1].values
-Y = dataset.iloc[:,1].values
-from sklearn.model_selection import train_test_split
-X_train,X_test,Y_train,Y_test = train_test_split(X,Y,test_size=1/3,random_state=0)
-from sklearn.linear_model import LinearRegression
-regressor = LinearRegression()
-regressor.fit(X_train,Y_train)
-Y_pred = regressor.predict(X_test)
-plt.scatter(X_train,Y_train,color='red')
-plt.plot(X_train,regressor.predict(X_train),color='blue')
-plt.title("Hours vs Scores(Training set)")
-plt.xlabel("Hours")
-plt.ylabel("Score")
-plt.show()
-plt.scatter(X_test,Y_test,color='red')
-plt.plot(X_train,regressor.predict(X_train),color='blue')
-plt.title("Hours vs scores (Testing set)")
-plt.xlabel("Hours")
-plt.ylabel("Scores")
-plt.show()  
+data=pd.read_csv("/content/student_scores - student_scores.csv")
+data.head()
+data.isnull().sum()
+x=data.Hours
+x.head()
+y=data.Scores
+y.head()
+n=len(x)
+m=0
+c=0
+l=0.001
+loss=[]
+for i in range(10000):
+    ypred=m*x+c
+    MSE=(1/n)*sum((ypred-y)*2)
+    dm=(2/n)*sum(x*(ypred-y))
+    dc=(2/n)*sum(ypred-y)
+    c=c-l*dc
+    m=m-l*dm
+    loss.append(MSE)
+    #print(m,c)
+    ypred=m*x+c
+plt.scatter(x,y,color="blue")
+plt.plot(x,ypred)
+plt.xlabel("study hours")
+plt.ylabel("scores")
+plt.title("study hour vs scores")
+plt.plot(loss)
+plt.xlabel("iteration")
+plt.ylabel("loss")
+    
 */
 ```
 
 ## Output:
-![linear regression using gradient descent](lr.png)
+![linear regression using gradient descent](ex 1.png)
 
 
 ## Result:
