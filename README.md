@@ -70,6 +70,6 @@ plt.ylabel("loss")
 ```
 
 ## Output:
-![simple linear regression model for predicting the marks scored](ex 1.png)
+![simple linear regression model for predicting the marks scored](https://github.com/Pallavi-Raveendranadreddy/Implementation-of-Linear-Regression-Using-Gradient-Descent/blob/c7c3d054fb7489d952f53df38027d8e4378aaa9c/ex%201.PNG)
 ## Result:
 Thus the program to implement the linear regression using gradient descent is written and verified using python programming.
