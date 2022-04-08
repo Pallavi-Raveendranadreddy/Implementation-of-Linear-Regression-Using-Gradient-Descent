@@ -26,7 +26,7 @@ To write a program to implement the linear regression using gradient descent.
 
 9.End the program.
 ## Program:
-<<<<<<< HEAD
+
 ```
 /*
 Program to implement the linear regression using gradient descent.
@@ -68,10 +68,7 @@ plt.xlabel("iteration")
 plt.ylabel("loss")
 /*
 ```
-    
-=======
 
->>>>>>> e5d1e5116bc5128696a83d24db3972ee707ca926
 ## Output:
 ![simple linear regression model for predicting the marks scored](ex 1.png)
 ## Result:
