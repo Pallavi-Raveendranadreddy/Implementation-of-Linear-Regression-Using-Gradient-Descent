@@ -50,7 +50,7 @@ plt.show()
 ```
 
 ## Output:
-![linear regression using gradient descent](lr.png)
+![linear regression using gradient descent](https://github.com/Pallavi-Raveendranadreddy/Implementation-of-Linear-Regression-Using-Gradient-Descent/blob/78c2acd792b15999e38056709a1ae7381431011b/lr.PNG)
 
 
 ## Result:
